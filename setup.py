@@ -14,28 +14,28 @@ requirements = parse_requirements('requirements.txt')
 
 
 setup(
-    name="nuclearowl",  # Replace with your package name
-    version="0.1.0",  # Initial release version
+    name="nuclearowl", 
+    version="1.1.0",  
     description="A lib handling nuclear imaging data and Ai applications on top of it",  # Brief description of your package
-    long_description=long_description,  # Use the README.md file as the long description
-    long_description_content_type="text/markdown",  # Make sure this matches the format of your README file
-    url="https://github.com/MarkusStefan/NUKMED-AI",  # URL to the project's homepage or repository
-    author="NUMED TEAM",  # Replace with your name
-    author_email="clemens.spielvogel@meduniwien.ac.at",  # Replace with your email
-    license="MIT",  # License type (e.g., MIT, GPLv3, etc.)
-    classifiers=[  # Classifiers help users find your project by categorizing it
-        "Development Status :: 3 - Alpha",  # Example: Alpha, Beta, Stable
+    long_description=long_description,  
+    long_description_content_type="text/markdown",  
+    url="https://github.com/eser-chr/nuclearowl",  
+    author="eser-chr",  
+    author_email="chriseseroglou@gmail.com",  
+    license="MIT",  
+    classifiers=[  
+        "Development Status :: 3 - Alpha",  
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
     ],
-    keywords="nuclear imaging, medical imaging, python, AI(wow), segmentation",  # Add relevant keywords
-    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),  # Automatically find your packages
-    python_requires=">=3.7",  # Minimum Python version required
+    keywords="nuclear imaging, medical imaging, python, AI(wow), segmentation",  
+    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),  
+    python_requires=">=3.7", 
     install_requires=requirements,
-    package_data={  # Include additional files into the package
-        "": ["data/*.dat"],  # Example of including data files
+    package_data={  
+        "": ["data/*.dat"],  
     }
 )
